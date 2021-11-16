@@ -3,19 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AnimalListComponent } from './animal-list/animal-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatCardModule } from '@angular/material/card';
 import { AnimalDetailsComponent } from './animal-details/animal-details.component';
+import { AnimalListModule } from './animal-list/animal-list.module';
 
 @NgModule({
-  declarations: [AppComponent, AnimalListComponent, AnimalDetailsComponent],
+  declarations: [AppComponent, AnimalDetailsComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule,
+    AnimalListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
