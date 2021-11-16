@@ -2,11 +2,7 @@
   max-width: 300px;
   border: 1px solid black;
   box-sizing: border-box;
-}
-
-.example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-  background-size: cover;
+  margin: 1rem;
 }
 
 .flex-header {
@@ -15,6 +11,10 @@
   align-items: center;
 }
 
-.mat-card-header-text {
-  margin: 0 !important;
+.card-img {
+  height: 250px;
+}
+
+.animal-list-container {
+  display: flex;
 }
