@@ -7,9 +7,10 @@ import { AnimalListComponent } from './animal-list/animal-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
+import { AnimalDetailsComponent } from './animal-details/animal-details.component';
 
 @NgModule({
-  declarations: [AppComponent, AnimalListComponent],
+  declarations: [AppComponent, AnimalListComponent, AnimalDetailsComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
